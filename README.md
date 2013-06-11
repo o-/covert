@@ -18,6 +18,8 @@ Each word is accepted by the other side with a final ack/nack (delayed/undelayed
 
 ## Usage
 
-  sudo python server.py <bind-to-ip>
+```
+  # sudo python server.py <bind-to-ip>
 
-  sudo python client.py <src-ip> <server-ip>
+  # sudo python client.py <src-ip> <server-ip>
+```
