@@ -1,0 +1,4 @@
+tc qdisc add dev lo root handle 1: prio bands 10
+tc qdisc add dev lo parent 1:1 handle 10: netem delay 2ms 7ms 80% distribution normal
+tc filter add dev lo protocol ip parent 1:0 prio 1 u32 match ip src 0.0.0.0/0 match ip dst 0.0.0.0/0 flowid 10:1
+#tc qdisc del dev lo root

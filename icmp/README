@@ -1,0 +1,4 @@
+- howto debug:
+
+* set DEBUG=True in helper.py
+* set clock to 0.5 and word_wait to 1 in client.py
